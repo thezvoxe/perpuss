@@ -48,22 +48,4 @@
             </div>
         </div>
     </section>
-     <section class="section" id="services">
-        <div class="container">
-            <div class="row">
-                @foreach ($buku as $item)    
-                    <div class="owl-carousel owl-theme">
-                        <div class="item service-item">
-                            <div class="card" style="height: 100%;">
-                                <i><img src="{{ asset('storage/buku/' . $item->cover) }}" alt="buku"></i>
-                            </div>
-                            <h5 class="service-title">{{ $item->judul }}</h5>
-                            <p>{{ $item->deskripsi }}</p>
-                            <a href="#" class="main-button">Read More</a>
-                        </div>
-                    </div>
-                @endforeach
-            </div>
-        </div>
-    </section>
 @endsection
