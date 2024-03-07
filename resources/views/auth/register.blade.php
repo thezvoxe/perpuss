@@ -34,35 +34,33 @@
           <div class="col-lg-7">
             <div class="p-5">
               <div class="text-center">
-                <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
+                <h1 class="h4 text-gray-900 mb-4">Silahkan Buat Akun Anda!</h1>
               </div>
               <form action="/register" method="post" class="user">
                 @csrf
-                <div class="form-group row">
-                  <div class="col-sm-6 mb-3 mb 3-sm-0">
+                <div class="form-group mb-3">
                     <input type="text" name="name" class="form-control form-control-user @error('name')is-invalid @enderror "
-                      id="exampleFirstName" placeholder="First Name" />
+                      id="exampleFirstName" placeholder="Nama" />
                     @error('name')
                       <span class="invalid-feedback">{{ $message }}</span>
                     @enderror
-                  </div>
                 </div>
                 <div class="form-group mb-3">
                   <input type="email" name="email" class="form-control form-control-user @error('email')is-invalid @enderror"
-                    id="exampleInputEmail" placeholder="Email Address" />
+                    id="exampleInputEmail" placeholder="Email" />
                   @error('email')
                     <span class="invalid-feedback">{{ $message }}</span>
                   @enderror
                 </div>
                 <div class="form-group mb-3">
-                    <input type="alamat" placeholder="alamat" name="alamat" class="form-control form-control-user @error('alamat')is-invalid @enderror"
+                    <input type="alamat" placeholder="Alamat" name="alamat" class="form-control form-control-user @error('alamat')is-invalid @enderror"
                       id="alamat" />
                     @error('alamat')
                       <span class="invalid-feedback">{{ $message }}</span>
                     @enderror
                   </div>
                   <div class="form-group mb-3">
-                    <input type="telepon" placeholder="telepon" name="telepon" class="form-control form-control-user @error('telepon')is-invalid @enderror"
+                    <input type="telepon" placeholder="No Telepon" name="telepon" class="form-control form-control-user @error('telepon')is-invalid @enderror"
                       id="teleponn" />
                     @error('telepon')
                       <span class="invalid-feedback">{{ $message }}</span>
@@ -78,19 +76,19 @@
                   </div>
                   <div class="col-sm-6">
                     <input type="password" name="password_confirmation" class="form-control form-control-user @error('password_confirmation')is-invalid @enderror"
-                      id="exampleRepeatPassword" placeholder="Repeat Password" />
+                      id="exampleRepeatPassword" placeholder="Ulangi Password" />
                     @error('password_confirmation')
                       <span class="invalid-feedback">{{ $message }}</span>
                     @enderror
                   </div>
                 </div>
                 <div class="mt-2">
-                <button href="/login" class="btn btn-primary btn-user btn-block " type="submit">
+                <button href="/login" class="btn btn-secondary btn-user btn-block " type="submit">
                     Register
                  </button>
                  </div>
                 <div class="text-center">
-                  <a class="small" href="/login">Already have an account? Login!</a>
+                  <a class="small" href="/login">Sudah Punya Akun? Login Di Sini!</a>
                 </div>
                 </form>
             </div>

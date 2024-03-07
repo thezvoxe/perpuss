@@ -24,7 +24,7 @@
 
 </head>
 
-<body class="bg-gradient-primary">
+<body class="bg-gradient-secondary">
   <div class="container">
     <!-- Outer Row -->
     <div class="row justify-content-center">
@@ -39,13 +39,13 @@
               <div class="col-lg-6">
                 <div class="p-5">
                   <div class="text-center">
-                    <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
+                    <h1 class="h4 text-gray-900 mb-4">Selamat Datang!</h1>
                   </div>
                   <form action="{{ route('login') }}" method="POST" class="user">
                     @csrf
                     <div class="form-group">
                       <input type="email" name="email" class="form-control form-control-user @error('password') is-invalid @enderror" value="{{ old('email') }}" id="exampleInputEmail"required autocomplete="email"
-                        aria-describedby="emailHelp" placeholder="Enter Email Address..." autofocus>
+                        aria-describedby="emailHelp" placeholder="Email" autofocus>
                         @error('email')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -66,8 +66,8 @@
                     <button class="btn btn-primary btn-user btn-block" type="submit">
                       Login
                    </button>
-                  <div class="text-center">
-                    <a class="small" href="{{ route('register') }}">Create an Account!</a>
+                  <div class="mb-3">
+                    <p>Belum Punya Akun? <a href="{{ route('register') }}">Register Di Sini!</a></p>
                   </div>
                 </form>
                 </div>
