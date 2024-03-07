@@ -5,14 +5,10 @@
             <div class="col-12">
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
-                    <a href="#" class="logo">GBook</a>
+                    <a href="#" class="logo">Z Books</a>
+                    
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
-                    <ul class="nav">
-                        <li class="scroll-to-section"><a href="#welcome" class="active">Home</a></li>
-                        <li class="scroll-to-section"><a href="#about">About</a></li>
-                        <li class="scroll-to-section"><a href="#services">Book</a></li>
-                    </ul>
                     <a class='menu-trigger'>
                         <span>Menu</span>
                     </a>

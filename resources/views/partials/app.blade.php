@@ -31,7 +31,6 @@ https://templatemo.com/tm-537-art-factory
 
     @yield('konten')
 
-    @include('partials.footer')
     <!-- jQuery -->
     <script src="{{ asset('dist/assets/js/jquery-2.1.0.min.js') }}"></script>
 
