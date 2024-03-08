@@ -39,7 +39,7 @@
                                         <th scope="">Cover</th>
                                         <th scope="">status</th>
                                         <th scope="">aksi</th>
-                                        
+
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -51,21 +51,21 @@
                                         <td>{{ $item->jumlah }}</td>
                                         <td><img src="{{ asset('storage/buku/'.$item->buku->cover) }}" alt="" style="width: 100px; height:100px"></td>
                                         <td>{{ $item->status }}</td>
-                                        <td>                                     
-                                            <a href="{{ route('peminjaman.show', $item->id) }}" class="btn btn-sm btn-dark">Detail</a>                                         
+                                        <td>
+                                            <a href="{{ route('peminjaman.show', $item->id) }}" class="btn btn-sm btn-dark">Detail</a>
                                             <form action="{{ route('peminjaman.kembali', $item->id) }}" onsubmit="return confirm('Apakah Anda Yakin ?')" method="POST">
                                                 @csrf
                                                 <button type="submit" class="btn btn-sm btn-danger">Kembalikan</button>
-                                            </form>                                         
+                                            </form>
                                         </td>
-                                    
-                                    </tr> 
+
+                                    </tr>
                                     @empty
                                         <tr>
                                             <td colspan="9">Data Tidak Tersedia</td>
                                         </tr>
                                     @endforelse
-                                    
+
                                 </tbody>
                             </table>
                         </div>
@@ -73,16 +73,6 @@
                 </div>
             </div>
         </div>
-        <!-- Footer -->
-        <footer class="sticky-footer bg-white">
-            <div class="container my-auto">
-                <div class="copyright text-center my-auto">
-                    <span>Copyright &copy; Your Website 2020</span>
-                </div>
-            </div>
-        </footer>
-        <!-- End of Footer -->
-
     </div>
     <!-- End of Content Wrapper -->
 @endsection

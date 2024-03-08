@@ -54,14 +54,14 @@
                                         <td>
                                             <a href="{{ route('buku.show', $item->id) }}" class="btn btn-sm btn-dark">Detail</a>
                                             <a href="{{ route('user.pinjam.create', $item->id) }}" class="btn btn-sm btn-primary ">Pinjam</a>
-                                        </td>          
-                                    </tr> 
+                                        </td>
+                                    </tr>
                                     @empty
                                         <tr>
                                             <td colspan="9">Data Tidak Tersedia</td>
                                         </tr>
                                     @endforelse
-                                    
+
                                 </tbody>
                             </table>
                         </div>
@@ -69,16 +69,6 @@
                 </div>
             </div>
         </div>
-        <!-- Footer -->
-        <footer class="sticky-footer bg-white">
-            <div class="container my-auto">
-                <div class="copyright text-center my-auto">
-                    <span>Copyright &copy; Your Website 2020</span>
-                </div>
-            </div>
-        </footer>
-        <!-- End of Footer -->
-
     </div>
     <!-- End of Content Wrapper -->
 @endsection

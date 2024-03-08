@@ -80,7 +80,7 @@
                                     <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
-                               
+
                                 <div class="form-group">
                                     <a href="{{ route('buku.index') }}" class="btn btn-primary">back</a>
                                 </div>
@@ -90,16 +90,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- Footer -->
-        <footer class="sticky-footer bg-white">
-            <div class="container my-auto">
-                <div class="copyright text-center my-auto">
-                    <span>Copyright &copy; Your Website 2020</span>
-                </div>
-            </div>
-        </footer>
-        <!-- End of Footer -->
     </div>
     <!-- End of Content Wrapper -->
 @endsection
