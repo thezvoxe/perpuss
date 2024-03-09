@@ -22,25 +22,22 @@
   <link href="{{ asset('admin_assets/css/sb-admin-2.min.css') }}" rel="stylesheet" />
 </head>
 
-<body class="bg-gradient-primary" style="background:rgb(87, 87, 241);">
+<body class="bg-gradient-primary" style="background:rgb(142, 142, 142);">
   <div class="container">
     <div class="card o-hidden border-0 shadow-lg my-5">
       <div class="card-body p-0">
         <!-- Nested Row within Card Body -->
-        <div class="row">
-          <div class="col-lg-5 d-none d-lg-block bg-register-image">
-            <img src="{{ asset('dist/assets/gambar/book.webp') }}" alt="">
-          </div>
-          <div class="col-lg-7">
+        <div class="row" style="background-color: #dcdddd">
+          <div class="col-lg-12">
             <div class="p-5">
               <div class="text-center">
-                <h1 class="h4 text-gray-900 mb-4">Silahkan Buat Akun Anda!</h1>
+                <h1 class="h4 text-gray-900 mb-4">Regist Your Account Here!</h1>
               </div>
               <form action="/register" method="post" class="user">
                 @csrf
                 <div class="form-group mb-3">
                     <input type="text" name="name" class="form-control form-control-user @error('name')is-invalid @enderror "
-                      id="exampleFirstName" placeholder="Nama" />
+                      id="exampleFirstName" placeholder="Name" />
                     @error('name')
                       <span class="invalid-feedback">{{ $message }}</span>
                     @enderror
@@ -53,7 +50,7 @@
                   @enderror
                 </div>
                 <div class="form-group mb-3">
-                    <input type="alamat" placeholder="Alamat" name="alamat" class="form-control form-control-user @error('alamat')is-invalid @enderror"
+                    <input type="alamat" placeholder="Addres" name="alamat" class="form-control form-control-user @error('alamat')is-invalid @enderror"
                       id="alamat" />
                     @error('alamat')
                       <span class="invalid-feedback">{{ $message }}</span>
@@ -76,19 +73,20 @@
                   </div>
                   <div class="col-sm-6">
                     <input type="password" name="password_confirmation" class="form-control form-control-user @error('password_confirmation')is-invalid @enderror"
-                      id="exampleRepeatPassword" placeholder="Ulangi Password" />
+                      id="exampleRepeatPassword" placeholder="Repeat Password" />
                     @error('password_confirmation')
                       <span class="invalid-feedback">{{ $message }}</span>
                     @enderror
                   </div>
                 </div>
                 <div class="mt-2">
-                <button href="/login" class="btn btn-secondary btn-user btn-block " type="submit">
+                <button href="/login" class="btn btn-secondary btn-user btn-block" type="submit">
                     Register
                  </button>
                  </div>
                 <div class="text-center">
-                  <a class="small" href="/login">Sudah Punya Akun? Login Di Sini!</a>
+                    <p class="mt-3">Already Have an Account?</p>
+                  <a class="small" href="/login">Login Here!</a>
                 </div>
                 </form>
             </div>

@@ -7,9 +7,6 @@
         <div id="content">
             <!-- Begin Page Content -->
             <div class="container-fluid">
-
-                <!-- Page Heading -->
-                <h1 class="h3 mb-2 text-gray-800">Buku</h1>
                 <!-- DataTales Example -->
                 <!-- Button trigger modal -->
                 <div>
@@ -33,14 +30,14 @@
                             <table class="table table-boarded">
                                 <thead>
                                     <tr>
-                                        <th scope="">no</th>
-                                        <th scope="">judul</th>
-                                        <th scope="">penulis</th>
-                                        <th scope="">penerbit</th>
-                                        <th scope="">thn_terbit</th>
-                                        <th scope="">deskripsi</th>
-                                        <th scope="">kategori</th>
-                                        <th scope="">cover</th>
+                                        <th scope="">No</th>
+                                        <th scope="">Judul</th>
+                                        <th scope="">Penulis</th>
+                                        <th scope="">Penerbit</th>
+                                        <th scope="">Tahun Terbit</th>
+                                        <th scope="">Deskripsi</th>
+                                        <th scope="">Kategori</th>
+                                        <th scope="">Cover</th>
                                         <th scope="">Aksi</th>
                                     </tr>
                                 </thead>
@@ -63,14 +60,14 @@
                                             <a href="{{ route('buku-admin.edit', $item->id) }}" class="btn btn-sm btn-dark">Edit</a>
                                             <button type="submit" class="btn btn-sm btn-danger">Hapus</button>
                                             </form>
-                                        </td>          
-                                    </tr> 
+                                        </td>
+                                    </tr>
                                     @empty
-                                        <tr>
+                                        <tr class="text-center">
                                             <td colspan="9">Data Tidak Tersedia</td>
                                         </tr>
                                     @endforelse
-                                    
+
                                 </tbody>
                             </table>
                         </div>
@@ -78,16 +75,6 @@
                 </div>
             </div>
         </div>
-        <!-- Footer -->
-        <footer class="sticky-footer bg-white">
-            <div class="container my-auto">
-                <div class="copyright text-center my-auto">
-                    <span>Copyright &copy; Your Website 2020</span>
-                </div>
-            </div>
-        </footer>
-        <!-- End of Footer -->
-
     </div>
     <!-- End of Content Wrapper -->
 @endsection

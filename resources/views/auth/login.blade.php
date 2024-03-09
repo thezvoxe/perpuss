@@ -29,14 +29,11 @@
                             </span>
                     @enderror
                 </div>
-                <div class="d-flex justify-content-center mb-3">
-                    <button type="submit" class="btn btn-primary">Login</button>
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-secondary" style="border-radius: 10px">Login</button>
                 </div>
-                <div>
-                    <p>Belum punya akun? silahkan daftar terlebih dahulu</p>
-                    <a href="{{ route('register') }}">
-                        <p>Sign up</p>
-                    </a>
+                <div class="text-center">
+                    <a href="{{ route('register') }}"><p>Register Account</p></a>
                 </div>
             </form>
             </div>
