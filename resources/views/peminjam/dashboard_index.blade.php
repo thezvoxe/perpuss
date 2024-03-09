@@ -2,21 +2,16 @@
 @section('konten')
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
-
         <!-- Main Content -->
         <div id="content">
             <!-- Begin Page Content -->
             <div class="container-fluid">
-
                 <!-- Page Heading -->
                 <div class="d-sm-flex align-items-center justify-content-between mb-4">
                     <h1 class="h3 mb-0 text-gray-800">Peminjam</h1>
-
                 </div>
-
                 <!-- Content Row -->
                 <div class="row">
-
                     <!-- Earnings (Monthly) Card Example -->
                     <div class="col-xl-3 col-md-6 mb-4">
                         <div class="card border-left-secondary shadow h-100 py-2">
@@ -31,7 +26,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Earnings (Monthly) Card Example -->
                     <div class="col-xl-3 col-md-6 mb-4">
                         <div class="card border-left-secondary shadow h-100 py-2">
@@ -46,7 +40,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Earnings (Monthly) Card Example -->
                     <div class="col-xl-3 col-md-6 mb-4">
                         <div class="card border-left-secondary shadow h-100 py-2">
@@ -65,7 +58,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Pending Requests Card Example -->
                     <div class="col-xl-3 col-md-6 mb-4">
                         <div class="card border-left-secondary shadow h-100 py-2">
@@ -81,16 +73,7 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-            <!-- /.container-fluid -->
-
         </div>
-        <!-- End of Main Content -->
-
-        <!-- table -->
-
-        <!-- End table -->
-    </div>
-    <!-- End of Content Wrapper -->
+</div>
 @endsection
