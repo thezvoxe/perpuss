@@ -3,7 +3,7 @@
 
     <!-- Sidebar - Brand -->
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-        
+
         <div class="sidebar-brand-text mx-3">Wellcome<sup></sup></div>
     </a>
 
@@ -36,8 +36,8 @@
                     <a class="collapse-item" href="{{ route('data-peminjaman.index') }}">Peminjaman</a>
                 @endif
                 @if (Auth::user()->role == 'peminjam')
-                <a class="collapse-item" href="{{ route('buku.index') }}">buku</a>
-                <a class="collapse-item" href="{{ route('user.pinjam.index') }}">peminjaman</a>
+                <a class="collapse-item" href="{{ route('buku.index') }}">Buku</a>
+                <a class="collapse-item" href="{{ route('user.pinjam.index') }}">Peminjaman</a>
                 @endif
             </div>
         </div>

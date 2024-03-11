@@ -9,7 +9,7 @@
             <div class="container-fluid">
 
                 <!-- Page Heading -->
-                <h1 class="h3 mb-2 text-gray-800">Buku yang Dipinjam</h1>
+                <h1 class="h3 mb-2 text-gray-800">Buku Yang Dipinjam</h1>
                 <!-- DataTales Example -->
                 <!-- Button trigger modal -->
                 <div>
@@ -29,8 +29,8 @@
                             <table class="table table-boarded">
                                 <thead>
                                     <tr>
-                                        <th scope="">no</th>
-                                        <th scope="">cover</th>
+                                        <th scope="">No</th>
+                                        <th scope="">Cover</th>
                                         <th scope="">Judul</th>
                                         <th scope="">Tanggal Pinjam</th>
                                         <th scope="">Status</th>
@@ -44,17 +44,16 @@
                                         <td>{{ $item->buku->judul }}</td>
                                         <td>{{ $item->created_at->format('d M Y') }}</td>
                                         @if ($item->status == 'dipinjam')
-                                        <td><span class="badge badge-success">{{ $item->status }}</span></td>        
+                                        <td><span class="badge badge-success">{{ $item->status }}</span></td>
                                         @else
-                                        <td><span class="badge badge-danger">{{ $item->status }}</span></td>                  
+                                        <td><span class="badge badge-danger">{{ $item->status }}</span></td>
                                         @endif
-                                    </tr> 
+                                    </tr>
                                     @empty
-                                        <tr>
+                                        <tr class="text-center">
                                             <td colspan="9">Data Tidak Tersedia</td>
                                         </tr>
                                     @endforelse
-                                    
                                 </tbody>
                             </table>
                         </div>
@@ -62,16 +61,6 @@
                 </div>
             </div>
         </div>
-        <!-- Footer -->
-        <footer class="sticky-footer bg-white">
-            <div class="container my-auto">
-                <div class="copyright text-center my-auto">
-                    <span>Copyright &copy; Your Website 2020</span>
-                </div>
-            </div>
-        </footer>
-        <!-- End of Footer -->
-
     </div>
     <!-- End of Content Wrapper -->
 @endsection

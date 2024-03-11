@@ -29,14 +29,14 @@
                             <table class="table table-boarded">
                                 <thead>
                                     <tr>
-                                        <th scope="">no</th>
-                                        <th scope="">judul</th>
-                                        <th scope="">penulis</th>
-                                        <th scope="">penerbit</th>
+                                        <th scope="">No</th>
+                                        <th scope="">Judul</th>
+                                        <th scope="">Penulis</th>
+                                        <th scope="">Penerbit</th>
                                         <th scope="">Tahun Terbit</th>
-                                        <th scope="">deskripsi</th>
-                                        <th scope="">kategori</th>
-                                        <th scope="">cover</th>
+                                        <th scope="">Deskripsi</th>
+                                        <th scope="">Kategori</th>
+                                        <th scope="">Cover</th>
                                         <th scope="">Aksi</th>
                                     </tr>
                                 </thead>
@@ -57,7 +57,7 @@
                                         </td>
                                     </tr>
                                     @empty
-                                        <tr>
+                                        <tr class="text-center">
                                             <td colspan="9">Data Tidak Tersedia</td>
                                         </tr>
                                     @endforelse
