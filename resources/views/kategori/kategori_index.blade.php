@@ -9,7 +9,7 @@
             <div class="container-fluid">
 
                 <!-- Page Heading -->
-                <h1 class="h3 mb-2 text-gray-800"> Data User</h1>
+                <h1 class="h3 mb-2 text-gray-800"> Data Kategori</h1>
                 <!-- DataTales Example -->
                 <!-- Button trigger modal -->
                 <div>
@@ -27,13 +27,13 @@
                     <div class="card-border-0 shadow-sm rounded">
                         <div class="card-body">
                             <div class="d-flex justify-content-between">
-                                <h4>Table User</h4>
+                                <h4>Table Kategori</h4>
                                 <a href="{{ route('kategori.create') }}" class="btn btn-md btn-primary mb-3">Tambah Kategori</a>
                             </div>
                             <table class="table table-boarded">
                                 <thead>
                                     <tr>
-                                        <th scope="">Nama</th>
+                                        <th scope="">Nama Kategori</th>
                                         <th scope="">Aksi</th>
                                     </tr>
                                 </thead>
@@ -49,14 +49,14 @@
                                             <a href="{{ route('user.edit', $item->id) }}" class="btn btn-sm btn-dark">Edit</a>
                                             <button type="submit" class="btn btn-sm btn-danger">Hapus</button>
                                             </form>
-                                        </td>          
-                                    </tr> 
+                                        </td>
+                                    </tr>
                                     @empty
-                                        <tr>
+                                        <tr class="text-center">
                                             <td colspan="5">Data Tidak Tersedia</td>
                                         </tr>
                                     @endforelse
-                                    
+
                                 </tbody>
                             </table>
                         </div>
@@ -64,16 +64,6 @@
                 </div>
             </div>
         </div>
-        <!-- Footer -->
-        <footer class="sticky-footer bg-white">
-            <div class="container my-auto">
-                <div class="copyright text-center my-auto">
-                    <span>Copyright &copy; Your Website 2020</span>
-                </div>
-            </div>
-        </footer>
-        <!-- End of Footer -->
-
     </div>
     <!-- End of Content Wrapper -->
 @endsection

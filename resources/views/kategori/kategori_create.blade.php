@@ -7,10 +7,7 @@
         <div id="content">
             <!-- Begin Page Content -->
             <div class="container-fluid">
-                <!-- Page Heading -->
-                <h1 class="h3 mb-2 text-gray-800">Data User</h1>
-                <!-- DataTales Example -->
-                <!-- Button trigger modal -->
+
                 <div>
                 </div>
             </div>
@@ -26,21 +23,21 @@
                             <form action="{{ route('kategori.store')}}" method="post" enctype="multipart/form-data">
                                 @csrf
                                 <div class="form-group">
-                                    <label for="nm_kategori">nama kategori</label>
+                                    <label for="nm_kategori">Nama Kategori</label>
                                     <input type="text" class="form-control" name="nm_kategori" id="nm_kategori">
                                     @error('nm_kategori')
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
                                 <div class="form-group">
-                                    <label for="deskripsi">deskripsi</label>
+                                    <label for="deskripsi">Deskripsi</label>
                                     <input type="text" class="form-control" name="deskripsi" id="deskripsi" aria-describedby="emailHelp">
                                     @error('deskripsi')
                                     <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
                                 <div class="form-group">
-                                    <label for="kategori">kategori</label>
+                                    <label for="kategori">Jenis Kategori</label>
                                     <select class="custom-select" name="kategori" id="Kategori">
                                         <option selected>Pilih Kategori</option>
                                         <option value="fiksi">Fiksi</option>
@@ -59,16 +56,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- Footer -->
-        <footer class="sticky-footer bg-white">
-            <div class="container my-auto">
-                <div class="copyright text-center my-auto">
-                    <span>Copyright &copy; Your Website 2020</span>
-                </div>
-            </div>
-        </footer>
-        <!-- End of Footer -->
     </div>
     <!-- End of Content Wrapper -->
 @endsection

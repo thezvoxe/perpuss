@@ -30,6 +30,7 @@
                 @if (Auth::user()->role == 'admin')
                 <a class="collapse-item" href="{{ route('buku-admin.index') }}">Buku</a>
                 <a class="collapse-item" href="{{ route('user.index') }}">User</a>
+                <a class="collapse-item" href="{{ route('kategori.index') }}">Kategori</a>
                 <a class="collapse-item" href="{{ route('peminjaman.index') }}">Peminjaman</a>
                 @endif
                 @if (Auth::user()->role == 'petugas')
